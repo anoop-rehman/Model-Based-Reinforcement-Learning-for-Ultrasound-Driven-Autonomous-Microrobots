@@ -14,8 +14,7 @@ Schematic of the experimental setup, showcasing an artificial vascular channel w
 
 ![Figure 2](results/Figure%201g.png)
 ### **Figure 2**
-Microrobot agent executes the optimal action, successfully reaches Target 1, and proceeds towards Target 2 using a newly imagined path.
-
+The microrobot envisions multiple potential paths towards a target in a dreamed environment, allowing it to 'dream' and train on various possible scenarios simultaneously. a recurrent 'dream' in the latent space 
 
 ## Demonstration GIFs
 Below are key demonstrations from our research:
@@ -56,14 +55,15 @@ Active and passive shape-shifting of a microrobot navigating obstacles in a micr
 ![Movie S7](results/Movie%20S7.gif)
 
 
-## Credits & Dependencies
-This project utilizes the following frameworks and hardware components:
+## Credits & Dependencies  
+This project utilizes and adapts components from the following repositories:  
 
-- **DreamerV3** – A model-based reinforcement learning algorithm used for training the microrobot control policies.  
-  GitHub: [https://github.com/danijar/dreamerv3](https://github.com/danijar/dreamerv3)
+- **DreamerV3** – A model-based RL algorithm used for microrobot control.  
+GitHub: [https://github.com/danijar/dreamerv3](https://github.com/danijar/dreamerv3)  
 
 - **Segment Anything Model (SAM)** – A segmentation model used for microrobot detection and tracking.  
-  GitHub: [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
+  GitHub: [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)  
 
-- **RSA_API** – Used for control the Tektronix function generator.  
-  Website: [https://github.com/tektronix/RSA_API](https://github.com/tektronix/RSA_API)
+- **RSA_API** – Integrated for function generator control.  
+  GitHub: [https://github.com/tektronix/RSA_API](https://github.com/tektronix/RSA_API)  
+
