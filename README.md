@@ -1,1 +1,54 @@
-# Model-Based-Reinforcement-Learning-for-Ultrasound-Driven-Autonomous-Microrobots
+# Model-Based-Reinforcement-Learning-for-Ultrasound-Driven-Autonomous-Microrobots# Model-Based Reinforcement Learning for Ultrasound-Driven Autonomous Microrobots
+
+## Abstract
+AI has catalyzed transformative advancements across multiple sectors, from medical diagnostics to autonomous vehicles, enhancing precision and efficiency. As it ventures into microrobotics, AI offers innovative solutions to the formidable challenge of controlling microrobots, which typically operate within imprecise, remotely actuated systems. We implement state-of-the-art model-based reinforcement learning for autonomous control of an ultrasound-driven microrobot learning from recurrent imagined environments. Our non-invasive, AI-controlled microrobot offers precise propulsion, which efficiently learns from images in data-scarce environments. Transitioning from a pre-trained simulation environment, we achieve sample-efficient collision avoidance and channel navigation, reaching a **90% success rate** in target navigation across various channels within an hour of fine-tuning. Moreover, our model initially successfully generalized in **50% of tasks in new environments**, improving to **over 90% with 30 minutes of further training**. Furthermore, we have showcased real-time manipulation of microrobots within complex vasculatures and across stationary and physiological flows, underscoring AI's potential to revolutionize microrobotics in biomedical applications.
+
+![Figure 1a](image1.png)
+### **Figure 1**
+Schematic of the experimental setup, showcasing an artificial vascular channel with eight PZTs in an octagonal configuration (left image). A schematic illustrates the microrobot’s behavior under ultrasound activation and details methods for its manipulation (right image).
+
+
+![Figure 1g](image2.png)
+### **Figure 2**
+Microrobot agent executes the optimal action, successfully reaches Target 1, and proceeds towards Target 2 using a newly imagined path.
+
+
+## Demonstration GIFs
+Below are key demonstrations from our research:
+
+### **Movie S1**
+Training process of MBRL in a real microfluidic racetrack channel. The left video shows early training (<100k steps) where the algorithm struggles to reach the target. On the right, after 340k steps, the algorithm shows improved target acquisition. The full process spans 10 days due to real-environment interactions.
+
+![Movie S1](movie_s1.gif)
+
+### **Movie S2**
+Transfer learning behavior from a simulation environment to a real experimental environment of the same shape. It shows that the model converges in real experiments in just 3 hours.
+
+![Movie S2](movie_s2.gif)
+
+### **Movie S3**
+Continuous action training in a vascular channel. The left side shows RRT* blue tree branches searching for the shortest path, marked in red when found. On the right, the microrobot is marked in blue, with the next target in red. The video demonstrates microrobots attempting to follow the path in real time.
+
+![Movie S3](movie_s3.gif)
+
+### **Movie S4**
+Transfer learning from a simulation environment to a real vascular channel using an MBRL model with sweeping actions.
+
+![Movie S4](movie_s4.gif)
+
+### **Movie S5**
+MBRL general model trained on 10 environments demonstrates its ability to perform across all 10 environments and adapt to a new, unseen channel with just 30 minutes of additional training.
+
+![Movie S5](movie_s5.gif)
+
+### **Movie S6**
+Autonomous manipulation in a flow environment after transfer learning from a simulation that mimics the flow, guiding the microrobot to move in a low-drag region near the wall.
+
+![Movie S6](movie_s6.gif)
+
+### **Movie S7**
+Active and passive shape-shifting of a microrobot navigating obstacles in a microchannel is demonstrated. Passive deformation occurs when a single piezoelectric transducer (PZT) is activated, while active manipulation involves dynamic shape changes using multiple PZTs for precise control and navigation.
+
+![Movie S7](movie_s7.gif)
+
+
