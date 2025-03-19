@@ -3,6 +3,10 @@
 ## Abstract
 AI has catalyzed transformative advancements across multiple sectors, from medical diagnostics to autonomous vehicles, enhancing precision and efficiency. As it ventures into microrobotics, AI offers innovative solutions to the formidable challenge of controlling microrobots, which typically operate within imprecise, remotely actuated systems. We implement state-of-the-art model-based reinforcement learning for autonomous control of an ultrasound-driven microrobot learning from recurrent imagined environments. Our non-invasive, AI-controlled microrobot offers precise propulsion, which efficiently learns from images in data-scarce environments. Transitioning from a pre-trained simulation environment, we achieve sample-efficient collision avoidance and channel navigation, reaching a **90% success rate** in target navigation across various channels within an hour of fine-tuning. Moreover, our model initially successfully generalized in **50% of tasks in new environments**, improving to **over 90% with 30 minutes of further training**. Furthermore, we have showcased real-time manipulation of microrobots within complex vasculatures and across stationary and physiological flows, underscoring AI's potential to revolutionize microrobotics in biomedical applications.
 
+This repository provides code for both simulation environments and physical experiments. The simulation environment can be run on Linux-based systems or within a virtualized Ubuntu environment on Windows using WSL2.
+
+For real-world experiments, the setup requires integrating the code with an imaging system, a Tektronix function generator, and an electronic circuit for switching between piezoelectric transducers (PZTs). Additionally, a camera must be connected to enable real-time feedback for microrobot tracking and manipulation.
+
 ![Figure 1](results/Figure%201a.png)
 ### **Figure 1**
 Schematic of the experimental setup, showcasing an artificial vascular channel with eight PZTs in an octagonal configuration (left image). A schematic illustrates the microrobot’s behavior under ultrasound activation and details methods for its manipulation (right image).
@@ -52,3 +56,14 @@ Active and passive shape-shifting of a microrobot navigating obstacles in a micr
 ![Movie S7](results/Movie%20S7.gif)
 
 
+## Credits & Dependencies
+This project utilizes the following frameworks and hardware components:
+
+- **DreamerV3** – A model-based reinforcement learning algorithm used for training the microrobot control policies.  
+  GitHub: [https://github.com/danijar/dreamerv3](https://github.com/danijar/dreamerv3)
+
+- **Segment Anything Model (SAM)** – A segmentation model used for microrobot detection and tracking.  
+  GitHub: [https://github.com/facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything)
+
+- **RSA_API** – Used for control the Tektronix function generator.  
+  Website: [https://github.com/tektronix/RSA_API](https://github.com/tektronix/RSA_API)
