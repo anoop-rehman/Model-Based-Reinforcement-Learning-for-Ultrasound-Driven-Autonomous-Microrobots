@@ -3,12 +3,12 @@
 ## Abstract
 AI has catalyzed transformative advancements across multiple sectors, from medical diagnostics to autonomous vehicles, enhancing precision and efficiency. As it ventures into microrobotics, AI offers innovative solutions to the formidable challenge of controlling microrobots, which typically operate within imprecise, remotely actuated systems. We implement state-of-the-art model-based reinforcement learning for autonomous control of an ultrasound-driven microrobot learning from recurrent imagined environments. Our non-invasive, AI-controlled microrobot offers precise propulsion, which efficiently learns from images in data-scarce environments. Transitioning from a pre-trained simulation environment, we achieve sample-efficient collision avoidance and channel navigation, reaching a **90% success rate** in target navigation across various channels within an hour of fine-tuning. Moreover, our model initially successfully generalized in **50% of tasks in new environments**, improving to **over 90% with 30 minutes of further training**. Furthermore, we have showcased real-time manipulation of microrobots within complex vasculatures and across stationary and physiological flows, underscoring AI's potential to revolutionize microrobotics in biomedical applications.
 
-![Figure 1a](image1.png)
+![Figure 1a](results/Figure%201a.png)
 ### **Figure 1**
 Schematic of the experimental setup, showcasing an artificial vascular channel with eight PZTs in an octagonal configuration (left image). A schematic illustrates the microrobot’s behavior under ultrasound activation and details methods for its manipulation (right image).
 
 
-![Figure 1g](image2.png)
+![Figure 1g](results/Figure%201g.png)
 ### **Figure 2**
 Microrobot agent executes the optimal action, successfully reaches Target 1, and proceeds towards Target 2 using a newly imagined path.
 
