@@ -12,7 +12,7 @@ For real-world experiments, the setup requires integrating the code with an imag
 Schematic of the experimental setup, showcasing an artificial vascular channel with eight PZTs in an octagonal configuration (left image). A schematic illustrates the microrobot’s behavior under ultrasound activation and details methods for its manipulation (right image).
 
 
-![Figure 2](results/Figure%201g.png)
+![Figure 2](results/Figure%201F.png)
 ### **Figure 2**
 The microrobot envisions multiple potential paths towards a target in a dreamed environment, allowing it to 'dream' and train on various possible scenarios simultaneously. a recurrent 'dream' in the latent space 
 
